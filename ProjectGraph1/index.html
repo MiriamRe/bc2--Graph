@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Graph Nodes</title>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- <script src="js/MyGraphLib.js"></script> -->
+<script src="js/final.js"></script>
+
+<style type="text/css">
+
+canvas {
+margin-left: auto;
+margin-right: auto;
+padding: 10px 0;
+display: block;
+border: 1px solid rgb(220,220,220);
+} 
+
+
+
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Semi';
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Lite';
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+.project {
+background : rgb(245,245,245);
+padding:6% 0px;
+text-align: center;
+}
+
+.project h1{
+font-family: 'Raleway-Bold';
+color: #000;
+font-size: 46px;
+padding: 5px;
+
+}
+
+.project h2{
+font-family: 'Raleway-Lite';
+color: #404040;
+font-size: 20px;
+margin-bottom: 30px;
+}
+
+.project span {
+color:red;
+font-family: 'Raleway-Bold';
+}
+
+.project i {
+color:red;
+display: block;
+margin:7px 0 0;
+font-size: 5px;
+
+}
+
+.content {
+padding: 60px 0;
+text-align: center;
+}
+
+p {
+color: #707070;
+font-family:'Raleway-Lite'; 
+font-size: 13px;
+line-height: 1.57;
+}
+
+.content .col-md-4 {
+padding: 0 35px;
+margin-bottom: 20px;
+margin-top: 30px;
+}
+
+.col-border {
+border-right: 1px dotted rgb(220,220,220);
+}
+
+.content h4 {
+color: #000;
+font-family: 'Raleway-Bold';
+text-transform: uppercase;
+font-weight: 400;
+font-size: 15px;
+margin-bottom: 13px;
+margin-top: 13px;
+letter-spacing: 0.7px;
+}
+
+.content i {
+color: red;
+background: none;
+border: 1px solid rgb(210,210,210);
+font-size: 24px;
+padding: 22px 20px;
+height: 75px;
+width: 75px;
+margin-bottom: 10px;
+border-radius:50%;
+}
+
+.content2 {
+background-color: rgb(245,245,245);
+padding: 50px 0;
+}
+
+.content2 h1 {
+font-family: 'Raleway-Lite';
+font-size: 21px;
+color: #000;
+text-align: center;
+}
+
+.content2 span {
+color: #f00;
+font-family: 'Raleway-Regular';
+font-weight: 600;
+
+}
+
+.canvas-area{
+padding: 50px 0;
+}
+
+.usage p {
+font-size: 18px;
+
+}
+
+.code-area {
+padding: 50px 0;
+}
+
+</style>
+
+</head>
+<body>
+<div class="row project">
+<div class="container">
+<div class="col-md-12 ">
+<h1>Graphie.js</h1>
+<h2>A Simple Javascript Library For <span> Graph Nodes</span></h2>
+<i class="fa fa-circle"></i>
+<i class="fa fa-circle"></i>
+<i class="fa fa-circle"></i>
+<i class="fa fa-circle"></i>
+</div>
+</div>
+</div>
+
+<div class="row content">
+<div class="container">
+<div class="col-md-4 col-border">
+<i class="fa fa-leaf"></i>
+<h4>Light-weight</h4>
+<p>Donec rutrum venenatis dui. In hac habitasse platea dictumst. Maecenas justo. Proin lectus orci, venenatis pharetra</p>
+</div>
+
+<div class="col-md-4 col-border">
+<i class="fa fa-rocket"></i>
+<h4>Quick</h4>
+<p>Donec rutrum venenatis dui. In hac habitasse platea dictumst. Maecenas justo. Proin lectus orci, venenatis pharetra</p>
+</div>
+
+<div class="col-md-4">
+<i class="fa fa-thumbs-up"></i>
+<h4>Easy Use</h4>
+<p>Donec rutrum venenatis dui. In hac habitasse platea dictumst. Maecenas justo. Proin lectus orci, venenatis pharetra</p>
+</div>
+
+
+</div>
+</div>
+
+<div class="row content2">
+<div class="container">
+<div class="col-md-12 ">
+<h1>How To Use <span>Graphie.js</span></h1>
+</div>
+</div>
+</div>
+<div class="row canvas-area">
+<div class="container">
+<div class="col-md-12 usage">
+<p>
+Simply add the following script to your html file then edit the nodes and edges to your liking.
+</p>
+
+<div class="col-md-6 code-area">
+<code>
+
+		var mweza = graph.newNode('Mweza', 50, 230);<br />
+		var diani = graph.newNode('Diani', 150, 330);<br />
+		var mombasa = graph.newNode('Mombasa', 190, 200);<br />
+		var mariakani = graph.newNode('Mariakani', 130, 70);<br />
+		var maweni = graph.newNode('Maweni', 340, 250);<br />
+		var mtwapa = graph.newNode('Mtwapa', 390, 100);<br />
+		var kikambala = graph.newNode('Kikambala', 430, 30);<br />
+		var watamu = graph.newNode('Watamu', 430, 80);<br />
+		<br />			
+	
+		graph.newEdge(mweza, diani, 'red');<br />
+		graph.newEdge(diani, mombasa, 'green');<br />
+		graph.newEdge(mombasa, mariakani, 'blue');<br />
+		graph.newEdge(mombasa, maweni, 'purple');<br />
+		graph.newEdge(mombasa, mtwapa, 'orange');<br />
+		graph.newEdge(mtwapa, kikambala, 'black');<br />
+		graph.newEdge(mtwapa, watamu, 'magenta');<br />
+		<br />
+		
+		graph.drawGraph();<br />
+		function getPath() {<br />
+			var startPoint = document.getElementById("startPoint").value;<br />
+			var path = traverse(startPoint).join(" - ");<br />
+			document.getElementById("path").innerHTML = path;<br />
+		}<br />
+
+
+</code>
+</div>
+<div class="col-md-6 canvas-area">
+<canvas id="mycanvas" width="500px" height="450px"></canvas>
+</div>
+</div>
+<div class="col-md-12">
+			<p>Enter Start Point to get traversal</p>
+			<input type = "text" id = "startPoint" name = "startPoint" />
+			<input type = "button" name = "getPath" value = "Get Path" onclick = "getPath();" />
+			
+			<div id = "path" style = "padding-top: 10px;"></div>
+		</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+	
+		var mweza = graph.newNode('Mweza', 50, 270);
+		var diani = graph.newNode('Diani', 150, 370);
+		var mombasa = graph.newNode('Mombasa', 190, 240);
+		var mariakani = graph.newNode('Mariakani', 130, 110);
+		var maweni = graph.newNode('Maweni', 340, 290);
+		var mtwapa = graph.newNode('Mtwapa', 390, 140);
+		var kikambala = graph.newNode('Kikambala', 430, 70);
+		var watamu = graph.newNode('Watamu', 430, 120);
+					
+	
+		graph.newEdge(mweza, diani, 'orange');
+		graph.newEdge(diani, mombasa, 'orange');
+		graph.newEdge(mombasa, mariakani, 'orange');
+		graph.newEdge(mombasa, maweni, 'orange');
+		graph.newEdge(mombasa, mtwapa, 'orange');
+		graph.newEdge(mtwapa, kikambala, 'orange');
+		graph.newEdge(kikambala, watamu, 'orange');
+	
+		
+		graph.drawGraph();
+		function getPath() {
+			var startPoint = document.getElementById("startPoint").value;
+			var path = traverse(startPoint).join(" - ");
+			document.getElementById("path").innerHTML = path;
+		}
+
+</script>
+
+
+</body>
+</html>
